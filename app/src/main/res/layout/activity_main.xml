@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    >
+
+    <EditText
+        android:padding="15dp"
+        android:background="@drawable/border"
+        android:id="@+id/et_password"
+        android:layout_centerInParent="true"
+        android:hint="Enter Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberPassword"/>
+
+    <EditText
+        android:layout_marginBottom="16dp"
+        android:padding="15dp"
+        android:background="@drawable/border"
+        android:id="@+id/et_old_password"
+        android:hint="Enter Old Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberPassword"
+        android:layout_above="@id/et_password"/>
+
+
+    <LinearLayout
+        android:id="@+id/linear_set_password"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp">
+
+        <Button
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            style="@style/BlueButton"
+            android:id="@+id/btn_save"
+            android:text="Save"
+            android:layout_width="wrap_content"/>
+
+        <Button
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            style="@style/BlueButton"
+            android:id="@+id/btn_exit"
+            android:text="Exit"
+            android:layout_width="wrap_content"/>
+
+    </LinearLayout>
+
+    <Button
+        android:visibility="gone"
+        style="@style/BlueButton"
+        android:id="@+id/btn_change_password"
+        android:text="Change Password"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"/>
+
+</RelativeLayout>
